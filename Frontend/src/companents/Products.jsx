@@ -49,12 +49,13 @@ function Products() {
     setAllData(sortedValue)
   }
   function handleFav(item) {
-let fav = favorites.find((product) => product._id == item._id)
-if (fav) {
-  alert("Bu mehsul daha once elave olunub")
-}else{
-  setFavorites([...favorites],fav)
-}
+    let fav = favorites.find((product)  => product._id == item._id)
+    console.log(favorites);
+    if (fav) {
+      alert("Bu mehsul daha once elave olunub")
+    } else {
+      setFavorites([...favorites,item] )
+    }
   }
   return (
     <div className='Products'>
