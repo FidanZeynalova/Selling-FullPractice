@@ -25,6 +25,7 @@ function Wishlist() {
       </Helmet>
       <div className='Wishlist'>
         <div className="card-wrapper">
+          <h1>Wishlist</h1>
           {
             isLoading ? (
               <h1> ...IsLoading</h1>
